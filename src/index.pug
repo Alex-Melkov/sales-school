@@ -2,6 +2,34 @@ doctype html
 html(lang= 'ru')
   head
     meta(charset='utf-8')
-    title= 'Школа продаж'
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(name='description' content='Школа продаж')
+    title='Школа продаж'
   body
-    p Файл откомпилирован шаблонизатором Pug
+    section.screen-1
+      .container
+        include components/header/header.pug
+        .screen-1__content
+          .screen-1__content__big-number 360
+          .screen-1__content__heading
+            h1 Школа <br> продаж
+            p Это продвинутый курс по продажам для<br> развития твоих ключевых навыков и<br> освоения эффективных технологий
+          .screen-1__content____image
+            img(src=require('./images/image29.png') alt='Фото' width='537.6px' height='749.9618px')
+          .screen-1__content__subscribe
+            include components/btn-subscribe/btn-subscribe.pug
+          .screen-1__content__start
+            span Старт:
+            p  1 сентября
+          .screen-1__content__author-block
+            p.screen-1__content__author-block__label Автор программы:
+            p.screen-1__content__author-block__name Алексей Сподин
+            p.screen-1__content__author-block__specialization Эксперт по продажам,<br> предприниматель
+            .screen-1__content__author-block__about-block
+              span Об авторе
+              a(href='')
+                svg(xmlns="http://www.w3.org/2000/svg" width="39" height="34" viewBox="0 0 49 44" fill="none")
+                  circle(cx="27" cy="22" r="21.5" stroke="#FFC045")
+                  path(d="M32 21.9998H0" stroke="#FFC045" stroke-width="2")
+                  path(d="M24.7782 14L32.5563 21.7782L24.7782 29.5563" stroke="#FFC045" stroke-width="2")

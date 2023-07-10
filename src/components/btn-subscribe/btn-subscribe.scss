@@ -1,19 +1,43 @@
 .btn-subscribe {
     color: $font-color-white;
     font-family: $font-family-montserrat;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
-    width: 259px;
-    height: 78px;
-    border: 10px solid $color-theme-orange;
+    width: 180px;
+    height: 50px;
+    border: 3px solid $color-theme-orange;
     background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    @include media_from('sm') {
+        width: 180px;
+        height: 50px;
+        font-size: 12px;
+        border: 3px solid $color-theme-orange;
+    }
+    @include media_from('md') {
+        width: 180px;
+        height: 50px;
+        font-size: 12px;
+        border: 3px solid $color-theme-orange;
+    }
+    @include media_from('lg') {
+        width: 220px;
+        height: 65px;
+        font-size: 14px;
+        border: 5px solid $color-theme-orange;
+    }
+    @include media_from('xl') {
+        width: 259px;
+        height: 78px;
+        font-size: 16px;
+        border: 10px solid $color-theme-orange;
+    }
 
     &:hover {
         background-color: #ffffff;

@@ -1,8 +1,10 @@
 header.header
-    .header-logo
-        include ../../components/logo/logo.pug
-    .header-block-links
+    .header__logo
+        img(src=require('../../images/logo.svg') alt='Лого')
+    .header__burger
+        span
+    .header__block-links
         include ../../components/header-navbar/header-navbar.pug
-        .header-block-links__social
-            include ../../components/social-icon/whatsapp.pug
-            include ../../components/social-icon/telegram.pug
+        .header__block-links__social
+            a.header__block-links__social__whatsapp(href='')
+            a.header__block-links__social__telegram(href='')

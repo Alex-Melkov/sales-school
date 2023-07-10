@@ -1,11 +1,9 @@
 @import "./fonts.scss";
 @import "./var.scss";
+@import "./mixins/media.scss";
 @import "./screen-1.scss";
 @import "../components/header/header.scss";
 @import "../components/header-navbar/header-navbar.scss";
-@import "../components/logo/logo.scss";
-@import "../components/social-icon/telegram.scss";
-@import "../components/social-icon/whatsapp.scss";
 @import "../components/btn-subscribe/btn-subscribe.scss";
 
 /*Обнуление*/
@@ -43,9 +41,17 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
+body.lock {
+	overflow: hidden;
+}
+
 .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 	max-width: 1700px;
 	margin: 0 auto;
+	@include media_from('sm') {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }

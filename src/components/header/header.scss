@@ -7,27 +7,6 @@
     z-index: 30;
 }
 
-.header__logo {
-    img {
-        width: 125.4;
-        height: 27px;
-        @include media_from('md') {
-            width: 125.4;
-            height: 27px;
-        }
-
-        @include media_from('lg') {
-            width: 167.2;
-            height: 35px;
-        }
-    
-        @include media_from('xl') {
-            width: 209px;
-            height: 45px;
-        }
-    }
-}
-
 .header__burger {
     display: block;
     position: relative;

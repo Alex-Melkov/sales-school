@@ -2,9 +2,12 @@
 @import "./var.scss";
 @import "./mixins/media.scss";
 @import "./screen-1.scss";
+@import "./screen-2.scss";
 @import "../components/header/header.scss";
 @import "../components/header-navbar/header-navbar.scss";
 @import "../components/btn-subscribe/btn-subscribe.scss";
+@import "../components/slider/slider.scss";
+@import "../components/logo/logo.scss";
 
 /*Обнуление*/
 *{

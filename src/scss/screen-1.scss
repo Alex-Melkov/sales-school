@@ -331,7 +331,8 @@
                 height: 26.4px;
                 background-image: url(/images/icons/arrow-link.svg);
                 background-position: center;
-                background-size: cover;
+                background-size: contain;
+                background-repeat: no-repeat;
                 @include media_from('md') {
                     width: 29.4px;
                     height: 26.4px;

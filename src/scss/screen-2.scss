@@ -1,0 +1,211 @@
+.screen-2 {
+    width: 100%;
+    background: #252C37;
+}
+
+.screen-2__top {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    @include media_from('xs') {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    @include media_from('md') {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    @include media_from('xl') {
+        padding-top: 100px;
+        padding-bottom: 130px;
+    }
+    .screen-2__top__block-color-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100%;
+        background-color: #0EADB8;
+    }
+
+    .screen-2__top__block-color-right {
+        position: absolute;
+        top: 0;
+        left: 80%;
+        width: 20%;
+        height: 100%;
+        background-color: $color-theme-orange;
+    }
+
+    .container {
+        .screen-2__top__content {
+            position: relative;
+            @include media_from('xs') {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            @include media_from('md') {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            @include media_from('xl') {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            .screen-2__top__content__heading {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                z-index: 2;
+                @include media_from('xs') {
+                    padding-right: 0;
+                    margin-bottom: 15px;
+                }
+                @include media_from('sm') {
+                    padding-right: 20px;
+                    margin-bottom: 20px;
+                }
+                @include media_from('md') {
+                    padding-right: 40px;
+                }
+                @include media_from('lg') {
+                    padding-right: 60px;
+                    margin-bottom: 30px;
+                }
+                @include media_from('xl') {
+                    padding-right: 80px;
+                }
+                @include media_from('xxl') {
+                    padding-right: 130px;
+                }
+                h2 {
+                    color: $font-color-white;
+                    font-family: $font-family-oswald;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 129%;
+                    text-transform: uppercase;
+                    @include media_from('xs') {
+                        font-size: 18px;
+                        letter-spacing: 1.21px;
+                    }
+                    @include media_from('sm') {
+                        font-size: 30px;
+                        letter-spacing: 1.41px;
+                    }
+                    @include media_from('md') {
+                        font-size: 40px;
+                    }
+                    @include media_from('lg') {
+                        font-size: 50px;
+                        letter-spacing: 1.51px;
+                    }
+                    @include media_from('xl') {
+                        font-size: 60px;
+                    }
+                    @include media_from('xxl') {
+                        font-size: 80px;
+                    }
+                }
+
+                p {
+                    color: $font-color-white;
+                    font-family: $font-family-oswald;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 129%;
+                    text-transform: uppercase;
+                    @include media_from('xs') {
+                        font-size: 18px;
+                        letter-spacing: 1.21px;
+                    }
+                    @include media_from('sm') {
+                        font-size: 30px;
+                        letter-spacing: 1.41px;
+                    }
+                    @include media_from('md') {
+                        font-size: 40px;
+                    }
+                    @include media_from('lg') {
+                        font-size: 50px;
+                        letter-spacing: 1.51px;
+                    }
+                    @include media_from('xl') {
+                        font-size: 60px;
+                    }
+                    @include media_from('xxl') {
+                        font-size: 80px;
+                    }
+                }
+            }
+
+            .screen-2__top__content__slider {
+                position: relative;
+                width: 80%;
+                z-index: 2;
+                @include media_from('xs') {
+                    width: 100%;
+                }
+                @include media_from('sm') {
+                    width: 90%;
+                }
+                @include media_from('md') {
+                    width: 80%;
+                }
+            }
+
+            .screen-2__top__content__subtract {
+                display: flex;
+                position: absolute;
+                @include media_from('xs') {
+                    bottom: 30px;
+                    left: 40px;
+                }
+                @include media_from('md') {
+                    bottom: 40px;
+                    left: 100px;
+                }
+                .screen-2__top__content__subtract__item {
+                    background-image: url(/images/icons/Subtract.svg);
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    @include media_from('xs') {
+                        width: 38.1px;
+                        height: 55.2px;
+                    }
+                    @include media_from('md') {
+                        width: 63.5px;
+                        height: 92px;
+                    }
+                    @include media_from('lg') {
+                        width: 101.6px;
+                        height: 147.2px;
+                    }
+                    @include media_from('xl') {
+                        width: 127px;
+                        height: 184px;
+                    }
+
+                    &:first-of-type {
+                        @include media_from('xs') {
+                            margin-right: 8px;
+                        }
+                        @include media_from('sm') {
+                            margin-right: 10px;
+                        }
+                        @include media_from('md') {
+                            margin-right: 12px;
+                        }
+                        @include media_from('lg') {
+                            margin-right: 15px;
+                        }
+                        @include media_from('xl') {
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

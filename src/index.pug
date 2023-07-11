@@ -9,6 +9,8 @@ html(lang= 'ru')
   body
     section.screen-1
       .container
+        .screen-1__bullet-block
+          include components/bullet/bullet.pug
         include components/header/header.pug
         .screen-1__content
           .screen-1__content__big-number 360
@@ -34,6 +36,8 @@ html(lang= 'ru')
         .screen-2__top__block-color-left
         .screen-2__top__block-color-right
         .container
+          .screen-2__top__bullet-block
+            include components/bullet/bullet.pug
           .screen-2__top__content
             .screen-2__top__content__heading
               h2 Вы сталкиваетесь<br> с этим? 
@@ -44,3 +48,8 @@ html(lang= 'ru')
               .screen-2__top__content__subtract__item
               .screen-2__top__content__subtract__item
       .screen-2__bottom
+        .container
+          .screen-2__bottom__content
+            .screen-2__bottom__content__button-up
+              include components/btn-up/btn-up.pug
+            include components/footer/footer.pug

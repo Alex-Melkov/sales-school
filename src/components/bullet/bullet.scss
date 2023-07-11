@@ -1,0 +1,21 @@
+.bullet {
+    display: flex;
+    flex-direction: column;
+}
+
+.bullet__item {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: $font-color-white;
+    opacity: 0.25;
+    margin-bottom: 15px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.active-bullet {
+    opacity: 1;
+}

@@ -1,6 +1,6 @@
 .screen-2 {
     width: 100%;
-    background: #252C37;
+    background: $color-theme-background;
 }
 
 .screen-2__top {
@@ -8,16 +8,16 @@
     height: 100%;
     position: relative;
     @include media_from('xs') {
-        padding-top: 30px;
-        padding-bottom: 50px;
+        padding-top: 70px;
+        padding-bottom: 90px;
     }
     @include media_from('md') {
-        padding-top: 50px;
-        padding-bottom: 70px;
+        padding-top: 100px;
+        padding-bottom: 120px;
     }
     @include media_from('xl') {
-        padding-top: 100px;
-        padding-bottom: 130px;
+        padding-top: 120px;
+        padding-bottom: 150px;
     }
     .screen-2__top__block-color-left {
         position: absolute;
@@ -38,6 +38,17 @@
     }
 
     .container {
+        .screen-2__top__bullet-block {
+            display: none;
+            @include media_from('xxl') {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 20px;
+                transform: translateY(-50%);
+            }
+        }
+
         .screen-2__top__content {
             position: relative;
             @include media_from('xs') {
@@ -204,6 +215,38 @@
                             margin-right: 20px;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+.screen-2__bottom {
+    width: 100%;
+    height: 100%;
+    @include media_from('xs') {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+    @include media_from('md') {
+        padding-top: 140px;
+        padding-bottom: 70px;
+    }
+    @include media_from('xl') {
+        padding-top: 180px;
+        padding-bottom: 130px;
+    }
+
+    .container {
+        .screen-2__bottom__content {
+            position: relative;
+            .screen-2__bottom__content__button-up {
+                position: absolute;
+                top: -60px;
+                right: 20px;
+                @include media_from('md') {
+                    top: -100px;
+                    right: 20px;
                 }
             }
         }

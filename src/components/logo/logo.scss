@@ -1,18 +1,18 @@
 .logo {
-    width: 125.4;
-    height: 27px;
+    max-width: 125.4px;
+    max-height: 27px;
     @include media_from('md') {
-        width: 125.4;
-        height: 27px;
+        max-width: 125.4;
+        max-height: 27px;
     }
 
     @include media_from('lg') {
-        width: 167.2;
-        height: 35px;
+        max-width: 167.2;
+        max-height: 35px;
     }
 
     @include media_from('xl') {
-        width: 209px;
-        height: 45px;
+        max-width: 209px;
+        max-height: 45px;
     }
 }
